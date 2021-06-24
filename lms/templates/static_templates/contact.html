@@ -1,0 +1,39 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Contact")}</%block>
+<style>
+    .texto{
+        float:left;
+        width:30%;
+        padding-right:35px;
+    }
+    .mapa{
+        float:left;
+        width:65%;
+    }
+    .subtitulo{
+        color:#702f8a;
+    }
+    .titulo{
+        color: #702f8a !important;
+    }
+</style>
+<main id="main" aria-label="Content" tabindex="-1" style="line-height:2; text-align: justify;">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader"><span class="titulo">AYUDA</span></%block>
+        </h1>
+	<p>Si tienes alguna incidencia con la plataforma o con tu cuenta, por favor escribenos a <a class="titulo" href="mailto:academy@aceleracenter.com">academy@aceleracenter.com</a> incluyendo tu nombre y la descripción de tu incidencia, de preferencia con la captura de pantalla.</p>
+	<span>Con gusto lo resolveremos en la brevedad posible.</span>
+	<div style="text-align:center;">
+		<br>
+	        <span>¡Cuentas con nosotros!</span>
+		<br>
+		<span><b class="titulo">ACELERA CENTER ACADEMY</b></span>
+		<br>
+		<a class= "nav-link" href=# onclick="document.getElementById('license').style.display='block'" >${_("License")}</a>
+	</div>
+    </section>
+</main>
