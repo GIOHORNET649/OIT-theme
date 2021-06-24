@@ -15,7 +15,7 @@
 	 % if context.get('include_language_selector', footer_language_selector_is_enabled()):
             <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
         % endif
-         <div class="wrapper-logo">:
+         <div class="wrapper-logo">
           <p>
             <a href="/">
               ## The default logo is a placeholder.
@@ -55,13 +55,13 @@
           ## through an API to partner sites (such as marketing sites or blogs),
           ## which are not technically powered by Open edX.
           % if not hide_openedx_link:
-            <!--<div class="footer-about-openedx">
+            <div class="footer-about-openedx">
               <p>
                 <a href="${footer['openedx_link']['url']}">
                   <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
                 </a>
               </p>
-            </div>-->
+            </div>
           % endif
         </div>
       </div>
@@ -77,8 +77,7 @@
         dir=${bidi}
       % endif
     >
-      
-	  <div class="colophon">
+      <div class="colophon">
         <div class="wrapper-logo">
           <p>
             <a href="/">
@@ -96,39 +95,24 @@
         </div>
 
         ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-		<div class="row">
-		<div class="col-8">
-			<p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
-			<nav class="nav-legal" aria-label="${_('Legal')}">
+        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+
+        <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
             % for item_num, link in enumerate(footer['legal_links'], start=1):
-              % if item_num == 1:
-              <li class="nav-legal-0${item_num}">
+              % if item_num == 3:
+              <!--<li class="nav-legal-0${item_num}">
                 <a href="${link['url']}">${link['title']}</a>
-              </li>
-              % endif
-			  % if item_num == 3:
-              <li class="nav-legal-0${item_num}">
-                <a href="${link['url']}">${link['title']}</a>
-              </li>
+              </li>--!>
               % endif
             % endfor
             <!--<li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>--!>
-				<!-- <li class="nav-item">
-			<div><a class= "nav-link" href=# onclick="document.getElementById('license').style.display='block'" >${_("License")}</a></div>
-			</li>--!>
+	   <!-- <li class="nav-item">
+		<div><a class= "nav-link" href=# onclick="document.getElementById('license').style.display='block'" >${_("License")}</a><div>
+		</li>--!>
 
           </ul>
         </nav>
-		</div>
-		<div class="col-4">
-			<div class="icons">
-				<div class="icon-pair">
-					<span class="icon-footer facebook-icon fa fa-facebook"></span>
-					<span class="icon-footer twitter-icon fa fa-twitter"></span>
-				</div>
-			</div>
-		</div>
       </div>
 
       ## Please leave this link and use one of the logos provided
@@ -136,12 +120,12 @@
       ## through an API to partner sites (such as marketing sites or blogs),
       ## which are not technically powered by OpenEdX.
       % if not hide_openedx_link:
-     <!--<div class="footer-about-openedx">
+     <div class="footer-about-openedx">
         <p>
           <a href="${footer['openedx_link']['url']}">
             <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" class="logo" width="140"/>
           </a>
-      </div> -->
+      </div> 
       % endif
     </footer>
   </div>
