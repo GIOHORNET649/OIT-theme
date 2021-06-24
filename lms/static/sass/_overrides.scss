@@ -2,16 +2,16 @@
 
 /*Boton de login*/
 .global-header .nav-links .secondary a.sign-in-btn, .global-header .nav-links .secondary .nav-item a.shopping-cart {
-        background-color: #1E2DBE !important
+        background-color: #1E2DBE !important;
 }
 /*Boton de registro (Aqui no es necesario)*/
 .global-header .nav-links .secondary a.register-btn {
         background: #10163D !important;
-        color: white
+        color: white;
 }
 /*Enlaces*/
 a:not(.btn), a:visited:not(.btn) {
-        color: black !important
+        color: black !important;
 }
 /*Titulo en contenedor de curso*/
 .courses-container .courses .course .course-info .course-title {
@@ -20,7 +20,7 @@ a:not(.btn), a:visited:not(.btn) {
 /*?*/
 .login-button {
         background: #54A3DA!important;
-        box-shadow: none
+        box-shadow: none;
 }
 /*Banner en cada elemento de curso*/
 .courses-container .courses .course .course-image .cover-image .learn-more {
@@ -43,13 +43,13 @@ a:not(.btn), a:visited:not(.btn) {
 	width:100%!important;
 }
 .col{
-	width:50%
+	width:50%;
 }
 .col-8{
-	width:60%
+	width:60%;
 }
 .col-4{
-	width:40%
+	width:40%;
 }
 
 .row{
