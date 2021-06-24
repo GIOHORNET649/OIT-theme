@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
+
 /*Boton de login*/
 .global-header .nav-links .secondary a.sign-in-btn, .global-header .nav-links .secondary .nav-item a.shopping-cart {
         background-color: #1E2DBE !important
@@ -72,4 +73,4 @@ body,h1,h2,h3,h4,h5,h6,p,div,button,a{
     font-family: "Noto Sans","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 }
 /*Cambiar fuentes*/
-/*font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;*/g
